@@ -1,7 +1,7 @@
-const myHeading = document.getElementById('myHeading');
-const myButton = document.getElementById('myButton');
-const myTextInput = document.getElementById('myTextInput');
+//select element by tag 
+const myList = document.getElementsByTagName('li');
 
-myButton.addEventListener('click', () => {
-  myHeading.style.color = myTextInput.value;
-});
+//loops through each li tag changing it to purple.
+for(let i = 0; i < myList.length; i++){
+  myList[i].style.color = "purple";
+}
